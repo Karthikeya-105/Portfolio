@@ -1,0 +1,96 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 36px;
+  bottom: 36px;
+  width: 2px;
+  background: linear-gradient(to bottom, #4f8ef7, #7c3aed);
+  border-radius: 9999px;
+}
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+.item:last-child { margin-bottom: 0; padding-bottom: 0; }
+
+.icon {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  background: var(--accent-grad);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--bg-primary);
+}
+
+.card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 24px 28px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  transform: translateX(6px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 8px 32px rgba(79,142,247,0.12);
+}
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.degree {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.institution {
+  font-size: 0.88rem;
+  color: var(--accent-blue);
+  font-weight: 500;
+}
+.score {
+  padding: 4px 12px;
+  background: rgba(34,197,94,0.12);
+  color: #22c55e;
+  border: 1px solid rgba(34,197,94,0.3);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.divider { height: 1px; background: var(--border); margin-bottom: 14px; }
+.meta { display: flex; flex-wrap: wrap; gap: 16px; }
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.83rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .timeline::before { display: none; }
+  .icon { width: 40px; height: 40px; font-size: 1rem; }
+  .cardHeader { flex-direction: column; }
+}

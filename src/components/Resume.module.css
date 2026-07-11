@@ -1,0 +1,121 @@
+.section { border-top: 1px solid var(--border); }
+.container { max-width: 800px; margin: 0 auto; }
+
+.headerActions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.backBtn, .printBtn {
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid var(--border-hover);
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+.backBtn:hover, .printBtn:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
+
+.doc {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 48px 52px;
+  box-shadow: var(--shadow-card);
+}
+.top {
+  text-align: center;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--accent-blue);
+}
+.name {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+.contactLine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+.contactLine a { color: var(--accent-blue); text-decoration: none; }
+.contactLine a:hover { text-decoration: underline; }
+.sep { color: var(--text-muted); }
+
+.block { margin-bottom: 24px; }
+.blockTitle {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+.block p, .block li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.skillsTable { width: 100%; border-collapse: collapse; }
+.skillsTable td {
+  padding: 4px 8px;
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+.skillsTable td:first-child { width: 200px; white-space: nowrap; }
+
+.eduItem { margin-bottom: 12px; }
+.eduHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.eduDetail { font-size: 0.84rem; color: var(--text-secondary); }
+
+.project { margin-bottom: 16px; }
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.projectHeader strong { font-size: 0.92rem; color: var(--text-primary); }
+.tech { font-size: 0.78rem; color: var(--accent-blue); font-style: italic; }
+.project ul { padding-left: 18px; list-style: disc; }
+.project li { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.65; }
+
+.achievements { padding-left: 18px; list-style: disc; }
+.achievements li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+  .doc { padding: 28px 20px; }
+  .eduHeader { flex-direction: column; gap: 2px; }
+  .projectHeader { flex-direction: column; align-items: flex-start; }
+}
