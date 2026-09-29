@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styles from './Projects.module.css'
 
 const GitIcon = () => (
@@ -8,6 +7,25 @@ const GitIcon = () => (
 )
 
 const PROJECTS = [
+  {
+    id: 'placement',
+    category: ['fullstack'],
+    previewClass: 'placementPreview',
+    badge: '🎓 College Placement Portal',
+    previewTitle: 'College Placement',
+    previewSpan: 'Portal',
+    previewSub: 'Placement drives, eligibility & application tracking',
+    title: 'College Placement Portal',
+    desc: 'Developed a full-stack placement portal to manage student profiles, company details, placement drives, and applications.',
+    tags: ['Java', 'Spring Boot', 'React.js', 'MySQL', 'REST APIs'],
+    features: [
+      'Student and company profile management',
+      'Role-based registration and functionality',
+      'Eligibility management and job-drive listings',
+      'Application tracking and selection status in MySQL',
+    ],
+    github: 'https://github.com/Karthikeya105',
+  },
   {
     id: 'ai',
     category: ['ai', 'fullstack'],
@@ -43,25 +61,6 @@ const PROJECTS = [
       'Interactive map visualization (Leaflet.js)',
       'Custom issue status monitoring',
       'Geolocation-based tracking',
-    ],
-    github: 'https://github.com/Karthikeya105',
-  },
-  {
-    id: 'health',
-    category: ['fullstack'],
-    previewClass: 'healthPreview',
-    badge: '🏥 Healthcare Management System',
-    previewTitle: 'Health Care',
-    previewSpan: 'Management System',
-    previewSub: 'Secure patient records, appointments & billing',
-    title: 'Health Care Management System',
-    desc: 'Developed a full-stack healthcare web application for securely managing patient records, appointments, and hospital billing.',
-    tags: ['Python', 'Flask', 'MySQL'],
-    features: [
-      'Secure multi-role user authentication',
-      'Efficient CRUD operations',
-      'Relational database indexing',
-      'Patient records & appointment management',
     ],
     github: 'https://github.com/Karthikeya105',
   },

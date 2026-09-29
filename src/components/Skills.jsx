@@ -27,8 +27,8 @@ const SKILL_CARDS = [
     title: 'Frontend',
     count: 4,
     items: [
-      { name: 'HTML5',      icon: '🌐', bg: '#e34c26'           },
-      { name: 'CSS3',       icon: '🎨', bg: '#1572B6'           },
+      { name: 'HTML5',      icon: '5',  bg: '#e34c26'           },
+      { name: 'CSS3',       icon: '3',  bg: '#1572B6'           },
       { name: 'React.js',   icon: '⚛️', bg: '#20232a'           },
       { name: 'JavaScript', icon: 'JS', bg: '#f7df1e', color: '#000' },
     ],
@@ -36,22 +36,20 @@ const SKILL_CARDS = [
   {
     category: 'backend',
     title: 'Backend & Frameworks',
-    count: 4,
+    count: 3,
     items: [
-      { name: 'Node.js',    icon: '🟢', bg: '#68a063' },
-      { name: 'Flask',      icon: '🌶️', bg: '#111'    },
-      { name: 'Django',     icon: '🦎', bg: '#092e20' },
+      { name: 'Node.js',    icon: 'N',   bg: '#68a063' },
+      { name: 'Spring Boot', icon: 'SB', bg: '#6DB33F' },
       { name: 'REST APIs',  icon: 'API', bg: '#FF6B35' },
     ],
   },
   {
     category: 'databases',
     title: 'Databases',
-    count: 3,
+    count: 2,
     items: [
-      { name: 'MySQL',   icon: '🐬', bg: '#00758F' },
-      { name: 'MongoDB', icon: '🍃', bg: '#13aa52' },
-      { name: 'SQL',     icon: '🗄️', bg: '#4a90d9' },
+      { name: 'MySQL',   icon: 'SQL', bg: '#00758F' },
+      { name: 'MongoDB', icon: 'M',   bg: '#13aa52' },
     ],
   },
   {
@@ -67,11 +65,13 @@ const SKILL_CARDS = [
   {
     category: 'tools',
     title: 'Core Concepts',
-    count: 4,
+    count: 6,
     items: [
       { name: 'DSA',             icon: '🧮', bg: '#6c63ff' },
       { name: 'OOP',             icon: '🔷', bg: '#e91e63' },
       { name: 'DBMS',            icon: '🗃️', bg: '#009688' },
+      { name: 'SDLC',            icon: 'SD', bg: '#4169e1' },
+      { name: 'Problem Solving', icon: 'PS', bg: '#9b59b6' },
       { name: 'Version Control', icon: '🔀', bg: '#ff9800' },
     ],
   },

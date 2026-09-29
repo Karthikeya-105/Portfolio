@@ -54,10 +54,10 @@ export default function Resume() {
                 {[
                   ['Programming Languages', 'Java, Python, JavaScript, SQL'],
                   ['Frontend Technologies', 'HTML5, CSS3, React.js, JavaScript'],
-                  ['Backend Technologies', 'Node.js, Flask, REST APIs'],
-                  ['Database Technologies', 'MySQL, MongoDB, SQL'],
+                  ['Backend Technologies', 'Node.js, Spring Boot, REST APIs'],
+                  ['Database Technologies', 'MySQL, MongoDB'],
                   ['Developer Tools', 'Git, GitHub, VS Code'],
-                  ['Core Concepts', 'Data Structures and Algorithms, OOP, DBMS, Version Control'],
+                  ['Core Concepts', 'Data Structures and Algorithms, OOP, DBMS, SDLC, Problem Solving, Version Control'],
                 ].map(([k, v]) => (
                   <tr key={k}>
                     <td><strong>{k}:</strong></td>
@@ -91,27 +91,28 @@ export default function Resume() {
             <h2 className={styles.blockTitle}>PROJECTS</h2>
             {[
               {
+                title: 'College Placement Portal',
+                tech: 'Java, Spring Boot, React.js, MySQL, REST APIs',
+                points: [
+                  'Developed a full-stack placement portal to manage student profiles, company details, placement drives, and applications.',
+                  'Implemented REST APIs and role-based functionality for registration, eligibility management, job-drive listings, and application tracking.',
+                  'Designed a MySQL database to manage student records, company information, placement drives, applications, and selection status across multiple tables.',
+                ],
+              },
+              {
                 title: 'AI-Based Learning Assistant',
                 tech: 'React.js, Node.js, MongoDB, NLP',
                 points: [
-                  'Developed an AI-powered learning platform for personalized education and intelligent doubt resolution.',
-                  'Implemented adaptive learning recommendations, automated quiz generation, and detailed progress tracking features.',
+                  'Developed an AI-powered learning platform for personalized education and intelligent doubt resolution using React.js, Node.js, MongoDB, and NLP.',
+                  'Implemented adaptive learning recommendations, automated quiz generation, and progress tracking.',
                 ],
               },
               {
                 title: 'Civic Dashboard',
                 tech: 'React.js, Node.js, MongoDB, Leaflet.js',
                 points: [
-                  'Built a comprehensive civic issue management dashboard with real-time complaint reporting and geolocation-based tracking.',
-                  'Integrated fully interactive map visualization features alongside custom issue status monitoring dashboards.',
-                ],
-              },
-              {
-                title: 'Health Care Management System',
-                tech: 'Python, Flask, MySQL',
-                points: [
-                  'Developed a full-stack healthcare web application for securely managing patient records, appointments, and hospital billing.',
-                  'Implemented secure multi-role user authentication and highly efficient CRUD operations optimized via relational database indexing.',
+                  'Built a civic issue management dashboard using React.js, Node.js, MongoDB, and Leaflet.js for complaint reporting, issue tracking, and geolocation-based monitoring.',
+                  'Integrated interactive map visualization and issue status monitoring for structured information management and user-focused workflows.',
                 ],
               },
             ].map(p => (
